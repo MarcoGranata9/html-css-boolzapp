@@ -8,3 +8,49 @@
 img {
     max-width: 100%;
 }
+
+/* Common */
+
+.flex {
+    display: flex;
+}
+
+/* Body */
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #009688;
+    padding: 40px 0;
+}
+
+/* Container */
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+
+    /* debug */
+    border: 1px solid black;
+}
+
+/* Contacts column */
+
+.contacts-col {
+    width: 35%;
+    height: 100%;
+    
+    /* debug */
+    background-color: blue;
+}
+
+/* Chat column */
+
+.chat-col {
+    width: 65%;
+    height: 100%;
+    
+    /* debug */
+    background-color: green;
+}
