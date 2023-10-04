@@ -71,18 +71,48 @@ body {
 
 .contacts {
     overflow-y: auto;
+    flex-direction: column;
 
     /* debug */
     background-color: darkgoldenrod;
     height: 200px;
 }
 
+
+
 /* Chat column */
 
 .chat-col {
     width: 65%;
     height: 100%;
-    
+    border-left: 1px solid gray;
+    flex-direction: column;
+
     /* debug */
     background-color: green;
+}
+
+.chat-col header {
+    width: 100%;
+    height: 80px;
+    
+
+    /* debug */
+    background-color: yellow;
+}
+
+.chat-col main {
+    background-image: url(../img/mine.jpg);
+    flex-grow: 1;
+
+    /* debug */
+    width: 100%;
+}
+
+.chat-col footer {
+    width: 100%;
+    height: 80px;
+
+    /* debug */
+    background-color: darkcyan;
 }
