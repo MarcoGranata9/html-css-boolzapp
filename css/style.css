@@ -45,6 +45,38 @@ body {
     background-color: blue;
 }
 
+.contacts-col header {
+    width: 100%;
+    height: 80px;
+
+    /* debug */
+    background-color: rgb(255, 0, 191);
+}
+
+.notifications {
+    width: 100%;
+    height: 90px;
+
+    /* debug */
+    background-color: #8EDAFC;
+}
+
+.search-bar {
+    width: 100%;
+    height: 50px;
+
+    /* debug */
+    background-color: #FAFAFA;
+}
+
+.contacts {
+    overflow-y: auto;
+
+    /* debug */
+    background-color: darkgoldenrod;
+    height: 200px;
+}
+
 /* Chat column */
 
 .chat-col {
