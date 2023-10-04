@@ -15,6 +15,16 @@ img {
     display: flex;
 }
 
+a {
+    color: inherit;
+}
+
+.avatar-img {
+    border-radius: 50%;    
+    width: 60px;
+    height: 60px;
+}
+
 /* Body */
 
 body {
@@ -22,6 +32,7 @@ body {
     height: 100vh;
     background-color: #009688;
     padding: 40px 0;
+    font-family: sans-serif;
 }
 
 /* Container */
@@ -45,20 +56,56 @@ body {
     background-color: blue;
 }
 
+/* Contacts header */
+
 .contacts-col header {
     width: 100%;
     height: 80px;
-
-    /* debug */
-    background-color: rgb(255, 0, 191);
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EAEAEA;
+    padding: 0 20px;
 }
+
+.contacts-h-right {
+    list-style-type: none;
+    gap: 10px;
+    color: #B1B1B1;
+}
+
+.contacts-h-right li {
+    margin-right: 10px;
+}
+
+.contacts-h-right a {
+    font-size: 25px;
+}
+
+/* Notifications */
 
 .notifications {
     width: 100%;
     height: 90px;
-
-    /* debug */
     background-color: #8EDAFC;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.bell {
+    text-align: center;
+}
+
+.bell i {
+    line-height: 60px;
+    background-color: white;
+    color: #8EDAFC;
+    font-size: 25px;
+}
+
+.notifications a {
+    color: rgb(85, 85, 85);
+    font-size: 0.9rem;
 }
 
 .search-bar {
