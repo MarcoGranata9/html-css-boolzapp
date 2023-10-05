@@ -25,6 +25,7 @@ button {
     font-size: 25px;
     border: 0;
     color: #B1B1B1;
+    cursor: pointer;
 }
 
 button:hover {
@@ -162,12 +163,12 @@ body {
 }
 
 .contact-chat {
-    
     padding: 10px;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
     border-bottom: 1px solid #B1B1B1;
+    cursor: pointer;
 }
 
 .contact-chat:hover {
@@ -308,11 +309,33 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 15px 10px 5px 0px;
+    position: relative;
 }
 
 .msg-utility span {
     font-size: 0.7rem;
 }
+
+.actions {
+    position: absolute;
+    background-color: white;
+    top: 29px;
+    right: 20px;
+    display: none;
+}
+
+.actions button {
+    color: black;
+    width: 150px;
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid gray
+}
+
+.fa-chevron-down:hover .actions {
+    display: block;
+}
+
 
 /* Footer chat */
 
