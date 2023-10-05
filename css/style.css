@@ -40,7 +40,7 @@ body {
     height: 100vh;
     background-color: #009688;
     padding: 40px 0;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 /* Container */
@@ -59,6 +59,7 @@ body {
 .contacts-col {
     width: 35%;
     height: 100%;
+    flex-direction: column;
 }
 
 /* Contacts header */
@@ -142,10 +143,29 @@ body {
 .contacts {
     overflow-y: auto;
     flex-direction: column;
+    flex-grow: 1;
+}
 
-    /* debug */
-    background-color: darkgoldenrod;
-    height: 200px;
+.contact-chat {
+    background-color: white;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #B1B1B1;
+}
+
+.contact-name {
+    flex-grow: 1;
+}
+
+.contact-name p {
+    color: #B1B1B1;
+}
+
+.time {
+    align-self: flex-start;
+    color: #B1B1B1;
 }
 
 @media screen and (max-width: 991px) {
