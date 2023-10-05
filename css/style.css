@@ -198,6 +198,7 @@ body {
     .contacts-col {
         min-width: 0;
         width: 80px;
+        flex-shrink: 0;
     }
 
     .contacts-col header {
@@ -228,8 +229,6 @@ body {
     align-items: center;
     gap: 10px;
     padding: 0 10px;
-
-    /* debug */
     background-color: #eaeaea;
 }
 
@@ -249,14 +248,61 @@ body {
     margin: 0 10px;
 }
 
-.chat-col main {
+/* Main chat */
+
+.chat {
     background-image: url(../img/mine.jpg);
     flex-grow: 1;
     overflow-y: auto;
-
-    /* debug */
-    width: 100%;
 }
+
+.chat ul {
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.chat ul:first-child {
+    margin-top: 30px;
+}
+
+.chat ul > * {
+    margin-bottom: 10px;
+}
+
+.msg-sent {
+    width: 60%;
+    background-color: #D5F9BA;
+    border-radius: 10px;
+    align-self: flex-end;
+    margin-right: 30px;
+}
+
+.msg-sent p,
+.msg-recived p {
+    padding: 15px;
+}
+
+.msg-recived {
+    width: 60%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+.msg-utility {
+    text-align: right;
+    color: #B1B1B1;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 10px 5px 0px;
+}
+
+.msg-utility span {
+    font-size: 0.7rem;
+}
+
+/* Footer chat */
 
 .chat-col footer {
     width: 100%;
